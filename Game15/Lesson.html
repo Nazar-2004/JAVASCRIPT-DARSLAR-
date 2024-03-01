@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>	
+	<title>Game-15</title>
+<style >
+	.button {
+		width: 120px;
+		height: 100px;
+		background-color: #10ed19;
+		border: none;
+		border-radius: 15px;
+		font-size: 24px;
+	}
+</style>
+
+</head>
+<body>
+	<h2>15 o'yini</h2>
+	<ol>
+	<li>Sublimeni o'rnatish</li>
+	<li>Tugma qo'yish</li>
+	<li>onclick hodisasi</li>
+	<li>alert - orqali xabar chiqarish</li>
+	<li>funksiyadan foydalanish</li>
+	<li>if - shart operatoridan foydalanish</li>
+	<li>for - siklidan foydalanish</li>
+	<li>getElementById - ID nima?</li>
+	<li>classList.add("zero"); elementga CSS class qo'shish</li>
+	<li>classList.remove("button"); elementga CSS classni o'chirish</li>
+	<li>array </li>
+	<li>matrix</li>
+	<li>random - tasodifiy sonlar bilan ishlash</li>
+	</ol>
+		<!-- Tugma qo'yish -->
+		<button class="button"   onclick="alert('Assalomu alaykum dasturchi!')">Tugma</button>
+		<br> <br>
+		<!-- Funksiya orqali tugma qo'yish -->
+		<button id="btn" onclick="salom('Nazar')">Salom</button>
+		<br> <br>
+		<!-- if - shart operatoridan foydalanish -->
+		<button  class="button" onclick="shart()">shart</button>
+
+		<!-- for - takrorlash siklidan foydalanish -->
+		<button  class="button" onclick="sikl()">Sikl</button>
+
+		<!-- classList.add("button"); getElementById yordamida elementga CSS class qo'shish -->
+		<button  class="button" onclick="addClass()">addClass</button>
+
+		<!-- classList.remove("button"); getElementById yordamida elementga CSS classni o'chirish -->
+		<button  class="button" onclick="remove()">remove</button>
+
+<script>
+	// Funksiya orqali tugma qo'yish
+	function salom(name) {
+		alert("Assalomu alaykum, " + name);
+	}
+	//  if - shart operatoridan foydalanish
+	function shart() {
+		let baho = 5;
+		if (baho == 3) {
+			console.log('A`lo baho');
+		} else {
+			console.log('Baholar 5 emas');
+		}
+	}
+	// for - takrorlash siklidan foydalanish
+	function sikl() {
+		for (var i = 1; i <= 10; i++) {
+			console.log(i);
+		}
+	}
+	// getElementById - ID nima? foydalanish  getElementById yordamida elementga CSS class qo'shish
+	function addClass() {
+		document.getElementById('btn').classList.add("button");
+	}
+
+	// getElementById - ID nima? foydalanish  getElementById yordamida elementga CSS classni o'chirish
+	function remove() {
+		document.getElementById('btn').classList.remove('button');
+	}
+</script>	
+</body>
+</html>
