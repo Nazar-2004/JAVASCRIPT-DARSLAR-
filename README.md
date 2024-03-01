@@ -1,1 +1,1 @@
-Ushbu Repositoryda JAVA SCRIPT DASTURLASH TILIDA TUZILGAN TURLI LOYIHALAR MAVJUD.
+Ushbu Repositoryda JAVA SCRIPT DASTURLASH tilida tuzilgan loyihalar mavjud.
